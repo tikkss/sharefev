@@ -4,4 +4,6 @@ class BookHistory < ActiveRecord::Base
 
   has_many :timelines, dependent: :destroy
   belongs_to :book
+
+  scope :recent, limit(3).order('book_histories.created_at desc')
 end

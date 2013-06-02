@@ -39,6 +39,7 @@ gem 'jquery-rails'
 
 gem 'nokogiri'
 gem 'friendly_id'
+gem 'cosmicrawler'
 
 group :development do
   gem 'nifty-generators'
