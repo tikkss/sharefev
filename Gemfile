@@ -37,8 +37,12 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+gem 'nokogiri'
+
 group :development do
   gem 'nifty-generators'
 end
 
-gem "mocha", :group => :test
+group :test do
+  gem "mocha"
+end

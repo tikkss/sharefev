@@ -56,6 +56,7 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.7.4)
     nifty-generators (0.4.6)
+    nokogiri (1.5.9)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -111,6 +112,7 @@ DEPENDENCIES
   jquery-rails
   mocha
   nifty-generators
+  nokogiri
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   sqlite3
