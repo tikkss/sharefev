@@ -1,0 +1,35 @@
+ja:
+  activerecord:
+    models:
+      book: 本
+      book_history: 本履歴
+      bookmark: ブックマーク
+      ranking: ランキング
+      timeline: タイムライン
+
+    attributes:
+      book:
+        name: 名前
+        title: タイトル
+        checked_url: チェックURL
+        linked_url: リンクURL
+
+      book_history:
+        book_id: 本
+        hit_text: ヒット文字
+        year: 年
+        no: 号
+
+      bookmark:
+        name: 名前
+        checked_url: チェックURL
+        linked_url: リンクURL
+
+      ranking:
+        timeline_id: タイムライン
+        ip_address: IPアドレス
+
+      timeline:
+        book_history: 本履歴
+        bookmark: ブックマーク
+        hit_text: ヒット文字
