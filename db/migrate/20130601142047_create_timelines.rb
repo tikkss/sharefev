@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateTimelines < ActiveRecord::Migration
   def change
     create_table :timelines do |t|

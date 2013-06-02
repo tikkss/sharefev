@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateBookHistories < ActiveRecord::Migration
   def change
     create_table :book_histories do |t|

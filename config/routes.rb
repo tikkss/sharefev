@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Sharefev::Application.routes.draw do
   root to: 'books#index'
 

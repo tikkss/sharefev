@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::BookmarksController < ApplicationController
   def index
     @bookmarks = Bookmark.all

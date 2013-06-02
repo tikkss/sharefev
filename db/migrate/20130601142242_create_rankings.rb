@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateRankings < ActiveRecord::Migration
   def change
     create_table :rankings do |t|
