@@ -38,6 +38,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'nokogiri'
+gem 'friendly_id'
 
 group :development do
   gem 'nifty-generators'
