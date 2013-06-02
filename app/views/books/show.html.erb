@@ -1,0 +1,22 @@
+<% title "Book" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @book.name %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+<p>
+  <strong>Checked Url:</strong>
+  <%= @book.checked_url %>
+</p>
+<p>
+  <strong>Linked Url:</strong>
+  <%= @book.linked_url %>
+</p>
+
+<p>
+  <%= link_to "View All", books_path %>
+</p>

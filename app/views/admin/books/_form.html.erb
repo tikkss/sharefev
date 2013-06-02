@@ -1,0 +1,20 @@
+<%= form_for [:admin, @book] do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :checked_url %><br />
+    <%= f.text_field :checked_url %>
+  </p>
+  <p>
+    <%= f.label :linked_url %><br />
+    <%= f.text_field :linked_url %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

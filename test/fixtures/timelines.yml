@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  book_history: 
+  bookmark: 
+  hit_text: MyString
+
+two:
+  book_history: 
+  bookmark: 
+  hit_text: MyString

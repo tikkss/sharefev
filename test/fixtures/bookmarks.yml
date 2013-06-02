@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  checked_url: MyString
+  linked_url: MyString
+
+two:
+  name: MyString
+  checked_url: MyString
+  linked_url: MyString

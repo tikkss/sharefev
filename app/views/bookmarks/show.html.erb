@@ -1,0 +1,18 @@
+<% title "Bookmark" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bookmark.name %>
+</p>
+<p>
+  <strong>Checked Url:</strong>
+  <%= @bookmark.checked_url %>
+</p>
+<p>
+  <strong>Linked Url:</strong>
+  <%= @bookmark.linked_url %>
+</p>
+
+<p>
+  <%= link_to "View All", bookmarks_path %>
+</p>

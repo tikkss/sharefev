@@ -1,0 +1,23 @@
+<% title "Admin/Books" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Checked Url</th>
+    <th>Linked Url</th>
+  </tr>
+  <% for book in @books %>
+    <tr>
+      <td><%= book.name %></td>
+      <td><%= book.title %></td>
+      <td><%= book.checked_url %></td>
+      <td><%= book.linked_url %></td>
+      <td><%= link_to "Show", [:admin, book] %></td>
+      <td><%= link_to "Edit", edit_admin_book_path(book) %></td>
+      <td><%= link_to "Destroy", [:admin, book], :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Admin/Book", new_admin_book_path %></p>

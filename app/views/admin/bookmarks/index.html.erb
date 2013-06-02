@@ -1,0 +1,21 @@
+<% title "Admin/Bookmarks" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Checked Url</th>
+    <th>Linked Url</th>
+  </tr>
+  <% for bookmark in @bookmarks %>
+    <tr>
+      <td><%= bookmark.name %></td>
+      <td><%= bookmark.checked_url %></td>
+      <td><%= bookmark.linked_url %></td>
+      <td><%= link_to "Show", [:admin, bookmark] %></td>
+      <td><%= link_to "Edit", edit_admin_bookmark_path(bookmark) %></td>
+      <td><%= link_to "Destroy", [:admin, bookmark], :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Admin/Bookmark", new_admin_bookmark_path %></p>

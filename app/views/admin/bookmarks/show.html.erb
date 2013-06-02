@@ -1,0 +1,20 @@
+<% title "Admin/Bookmark" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bookmark.name %>
+</p>
+<p>
+  <strong>Checked Url:</strong>
+  <%= @bookmark.checked_url %>
+</p>
+<p>
+  <strong>Linked Url:</strong>
+  <%= @bookmark.linked_url %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_admin_bookmark_path(@bookmark) %> |
+  <%= link_to "Destroy", [:admin, @bookmark], :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", admin_bookmarks_path %>
+</p>

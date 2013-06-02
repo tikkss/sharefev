@@ -1,0 +1,18 @@
+<% title "Bookmarks" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Checked Url</th>
+    <th>Linked Url</th>
+  </tr>
+  <% for bookmark in @bookmarks %>
+    <tr>
+      <td><%= bookmark.name %></td>
+      <td><%= bookmark.checked_url %></td>
+      <td><%= bookmark.linked_url %></td>
+      <td><%= link_to "Show", bookmark %></td>
+    </tr>
+  <% end %>
+</table>
+
